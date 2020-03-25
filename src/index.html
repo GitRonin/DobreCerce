@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Добре Серце</title>
+  <link rel="stylesheet" href="sass/style.css">
+  <link rel="icon" href="img/logo.png" type="image/x-icon">
+</head>
+<body>
+    <header class="header">
+      <!-- <div class="navbar_on">
+        <div class="searchSvg_on">
+          <button type="button" id="searchBtn" class="searchSvg">
+            <img src="img/search.svg">  
+          </button>
+        </div>
+        <div class="navbar__btn_on ">
+          <a href="../error/error.html"><button class="navbar__btn">Вхід / Зареєструватися</button></a>
+        </div>
+      </div> -->
+      <div class="navbar">
+        <div class="logo"><a href="../src/index.html"></a><img src="img/logo.svg"></a></div>
+        <div class="menulanguage">
+          <a class="ua" href="#">УКР</a>
+          <a class="menulanguage__item" href="#">РУС</a>
+          <a class="menulanguage__item" href="#">EN</a>
+        </div>
+        <nav>
+          <ul class="navMenu">
+            <li><a class="navMenu__a" href="../project/project.html">Проекти</a></li>
+            <li><a class="navMenu__a" href="../archive/archive.html">Архів</a></li>
+            <li><a class="navMenu__a" href="../contact/contact.html">Контакти</a></li>
+            <li><a class="navMenu__a navMenu__a-gradient" href="../help/help.html">Термінова допомога</a></li>
+          </ul>
+        </nav>
+          <button type="button" id="searchBtn" class="searchSvg">
+            <img src="img/search.svg">  
+          </button>
+        <div class="navbar__btn_off">
+          <a href="../error/error.html"><button class="navbar__btn">Вхід / Зареєструватися</button></a>
+        </div>
+      </div>
+      <div id="search" class="search">
+        <p class="searchText">Пошук:</p>
+        <div class="afterInput">
+        </div>
+      </div>
+      <div class="bigSearch">
+          <div class="bigSearch_container">
+            <p class="bigSearch_container_topic">Проекти</p>
+            <div class="bigSearch_container_allText">
+              <div class="bigSearch_container_text_1">
+                <p class="bigSearch_container_text">Діти</p>
+                <p class="bigSearch_container_text_small">Для операції на сердце маленькому хлопчику, необхідно зібрати гроші на ліки</p>
+                <img class="bigSearch_container_smallLine" src="img/smallLine.svg" alt="123 ">
+                <p class="bigSearch_container_text_small">Збираємо гроші на лікування п’ятирічного Василя, який став жертвою ДТП </p>
+                <img class="bigSearch_container_bigLine" src="img/bigLine.svg" alt="">
+              </div>
+              <div class="bigSearch_container_text_2">
+                <p class="bigSearch_container_text">Війна</p>
+                <p class="bigSearch_container_text_small">Необхідно зібрати ліки для поранених бійців із зони АТО </p>
+              </div>
+            </div>
+            <p class="bigSearch_container_topic">Архів</p>
+            <div class="bigSearch_container_allText">
+              <div class="bigSearch_container_text_1">
+                <p class="bigSearch_container_text">Діти</p>
+                <p class="bigSearch_container_text_small">Необхідно купити ліки для дитячого будинку в місті Київ</p>
+              </div>
+            </div>
+          </div>
+      </div>
+    <div class="forma_flex">
+      <div class="background2"></div>
+      <input class="close_forma" onclick="close_forma()" type="image" src="img/Close.svg">
+      <div class="background">
+        <div class="wcontainer">
+          <form id = "data"></form>
+          <label id = "updata"></label>
+            <center>
+              <p class="text">Заповніть форму</p>
+            </center>
+            <ul class="navMenu1">
+              <li><a class="f" href="#" onclick="pls2()">Фіз. особа</a></li>
+              <li><a class="u" href="#" onclick="pls()">Юр. особа</a></li>
+            </ul>
+            <p class="logotip">+ Логотип</p>
+            <div class="textAll">
+              <div class="textLeft">
+                <div class="nameFamily">
+                  <div class="name">
+                    <p>Ім'я</p>
+                    <input required autofocus form="data" for="updata" minlength="3" maxlength="10"  pattern="^[A-Za-zА-Яа-яЁёІіЇїЄє]+$" type="text" name="dick" class="nameBtn">
+                  </div>
+                  <div class="name">
+                      <p>Фамілія</p>
+                    <input required autofocus form="data" for="updata" minlength="3" maxlength="12"  pattern="^[A-Za-zА-Яа-яЁёІіЇїЄє]+$" type="text"  name="dick" class="nameBtn">
+                    </div>
+                  </div>
+                <div class="name company">
+                  <p>Назва компаніі, організації</p>
+                  <input required autofocus form="data" for="updata" minlength="3" maxlength="12" pattern="^[A-Za-zА-Яа-яЁёІіЇїЄє]+$+\s" type="text" class="familyBtn">
+                </div>
+                <div class="name company">
+                  <p>Email-адрес</p>
+                  <input required autofocus form="data" pattern="^[A-Za-z]+[ 0-9]+$" type="text" class="familyBtn">
+                </div>
+                <div class="name company">
+                  <p>Номер телефону</p>
+                  <input required autofocus form="data" minlength="10" maxlength="12" pattern="^[0-9]+$" type="text" class="familyBtn">
+                </div>
+                <div class="uface urface">
+                  <div class="name company">
+                    <p>Юридична адреса</p>
+                    <input required autofocus form="data" minlength="5" maxlength="20" type="text" class="familyBtn"">
+                  </div>
+                  <div class="nameFamily city">
+                    <div class="name">
+                      <p>Найменування банку</p>
+                      <input required autofocus form="data" minlength="5" maxlength="20" type="text" class="nameBtn">
+                    </div>
+                    <div class="name">
+                      <p>МФО банку</p>
+                      <input required autofocus form="data" minlength="5" maxlength="20" type="text" class="nameBtn">
+                    </div>
+                  </div>
+                  <div class="name company">
+                    <p>Розрахунковий рахунок</p>
+                    <input required autofocus form="data" minlength="5" maxlength="20" pattern="^[0-9]+$" type="text" class="familyBtn"">
+                  </div>
+                </div>
+              </div>
+              <div class="textRight">
+                <div class="country">
+                  <p>Країна</p>
+                  <input required autofocus form="data" minlength="3" maxlength="15" pattern="^[A-Za-zА-Яа-яЁёІіЇїЄє]+$" type="text" class="familyBtn">
+                </div>
+                  <div class="nameFamily city">
+                    <div class="name">
+                      <p>Місто</p>
+                      <input required autofocus form="data" minlength="3" maxlength="15" pattern="^[A-Za-zА-Яа-яЁёІіЇїЄє]+$" type="text" class="nameBtn">
+                    </div>
+                    <div class="name">
+                      <p>Штат, район</p>
+                      <input required autofocus form="data" minlength="3" maxlength="15" type="text" class="nameBtn">
+                    </div>
+                  </div>
+                  <div class="name">
+                    <p>Адреса</p>
+                    <input required autofocus form="data" minlength="5" maxlength="20" type="text" class="familyBtn">
+                  </div>
+                  <div class="name">
+                    <p>Поштовий індекс</p>
+                    <input required autofocus form="data" minlength="5" maxlength="20" pattern="^[0-9]+$+\s" type="text" class="nameBtn">
+                  </div>
+                  <div class="uface urface2">
+                    <div class="nameFamily city">
+                      <div class="name">
+                        <p>ЗКПО</p>
+                        <input required autofocus form="data" minlength="3" maxlength="20" type="text" class="nameBtn">
+                      </div>
+                      <div class="name">
+                        <p>Тип оподаткування</p>
+                        <input required autofocus form="data" minlength="3" maxlength="20" type="text" class="nameBtn">
+                      </div>
+                    </div>
+                    <div class="nameFamily city">
+                      <div class="name">
+                        <p>ІНН</p>
+                        <input required autofocus form="data" minlength="3" maxlength="20" type="text" class="nameBtn">
+                      </div>
+                      <div class="name">
+                        <p>Система оподаткування</p>
+                        <input required autofocus form="data" minlength="3" maxlength="20" type="text" class="nameBtn">
+                      </div>
+                    </div>
+                    <div class="nameFamily city">
+                      <div class="name">
+                        <p>Телефон бугалтерії</p>
+                        <input required autofocus form="data" minlength="10" maxlength="12" pattern="^[0-9]+$" type="text" class="nameBtn">
+                      </div>
+                      <div class="name">
+                        <p>Факс</p>
+                        <input required autofocus form="data" minlength="3" maxlength="20" type="text" class="nameBtn">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        <center>
+          <p class="text aid">Види допомоги</p>
+          <p class="textDop">Ви можете змінити вид допомоги</p>
+        </center>
+        <div class="fons">
+          <div class="fons_icon">
+            <div class="fonDis land">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40.384" height="40" viewBox="0 0 32.384 40">
+                  <path id="Shape_land" d="M32.336,12.753l-2.8,18.974a4.339,4.339,0,0,1-1.379,2.532c-.449.447-.748.744-.748,2.2v2.369a1.176,1.176,0,1,1-2.353,0V36.454a4.6,4.6,0,0,1,1.445-3.864,2.005,2.005,0,0,0,.715-1.256l2.788-18.915c.042-.289.12-1.271-.642-1.376a.828.828,0,0,0-.647.134,1.329,1.329,0,0,0-.442.889l-1.169,7.8a1.175,1.175,0,0,1-1.835.791.875.875,0,0,1-.513-.184,1.171,1.171,0,0,1-.539-1.054l.671-12.438a1.133,1.133,0,0,0-1.016-1.252,1.113,1.113,0,0,0-1.207,1.012L21.578,18a1.154,1.154,0,0,1-1.249,1.061c-.191-.012-.384-.024-.579-.026A1.179,1.179,0,0,1,18.6,17.875l-.271-14.4a1.1,1.1,0,1,0-2.2-.024l-.278,15.5a1.177,1.177,0,0,1-.673,1.042c-.146.071-.287.141-.421.216a1.162,1.162,0,0,1-1.12.019A1.184,1.184,0,0,1,13,19.3L11.79,6.76a1.11,1.11,0,0,0-.391-.767,1.158,1.158,0,0,0-.812-.256,1.108,1.108,0,0,0-1.007,1.2l1.184,16.7a1.176,1.176,0,0,1-2.094.814l-3.649-4.6a1.442,1.442,0,0,0-1.976-.645,1.368,1.368,0,0,0-.642.838,1.35,1.35,0,0,0,.141,1.042l8.3,14.322a1.357,1.357,0,0,0,.864.645,1.176,1.176,0,0,1,.9,1.144v1.624a1.176,1.176,0,1,1-2.353,0V38a3.689,3.689,0,0,1-1.445-1.407L.505,22.271a3.73,3.73,0,0,1,1.362-5.1,3.73,3.73,0,0,1,5.092,1.362L8.15,20.026l-.915-12.9a3.463,3.463,0,0,1,6.5-1.918l.033-1.772a3.454,3.454,0,0,1,6.908.021l.033,1.755a3.518,3.518,0,0,1,.831-1.021,3.472,3.472,0,0,1,5.692,2.96l-.125,2.3c.061-.054.127-.106.191-.155a3.173,3.173,0,0,1,2.4-.584c1.847.256,2.936,1.92,2.64,4.04Z" fill="#c5d5e6"/>
+                </svg>              
+            </div>
+            <p class="fons_text land_text">Зробити</p>
+          </div>
+          <div class="fons_icon">
+              <div class="fonDis money">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40.977" viewBox="0 0 40 32.977">
+                  <path id="Shape_money" d="M3.647,32.977A3.637,3.637,0,0,1,0,29.358V3.619H.033A3.638,3.638,0,0,1,3.68,0H40V29.083H35.393v3.894Z" fill="#ffffff"/>
+                </svg>
+            </div>
+            <p class="fons_text money_text">Фінансова допомога</p>
+          </div>
+          <div class="fons_icon">
+            <div class="fonDis clothes">
+                <svg xmlns="http://www.w3.org/2000/svg" width="39.805" height="40.06" viewBox="0 0 39.805 55.06">
+                  <g id="clothes" transform="translate(-0.119)">
+                    <g id="Group">
+                      <path id="Shape_clothes" d="M9.125,30.595a.971.971,0,0,1-.97-.97V14.192l-2.09,1.045a.971.971,0,0,1-1.228-.309l-4.66-6.6A.971.971,0,0,1,.349,7.021L8.5.23A.965.965,0,0,1,9.125,0H30.678A.969.969,0,0,1,31.3.229l8.151,6.792a.97.97,0,0,1,.171,1.306l-4.659,6.6a.971.971,0,0,1-1.228.309l-2.09-1.045v2.617a.971.971,0,1,1-1.941,0V1.941H26.04a6.213,6.213,0,0,1-12.274,0H10.1V28.653h5.938a.971.971,0,1,1,0,1.941Z" transform="translate(0.12)" fill="#c5d5e6"/>
+                      <path id="Shape_clothes_2" data-name="Shape" d="M13.015,36.152a.971.971,0,0,1-.969-.917L10.731,11.579,9.416,35.235a.97.97,0,0,1-.969.917H.971A.971.971,0,0,1,0,35.181V.971A.971.971,0,0,1,.971,0h19.52a.971.971,0,0,1,.971.971v34.21a.971.971,0,0,1-.971.971Z" transform="translate(18.304 18.908)" fill="#c5d5e6"/>
+                    </g>
+                  </g>
+                </svg>              
+            </div>
+             <p class="fons_text clothes_text">Матеріальна допомога</p>
+          </div>
+          <div class="fons_icon">
+            <div class="fonDis heart">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40.843" height="40.685" viewBox="0 0 38.843 36.685">
+                  <g id="donation" transform="translate(-0.035 -0.001)">
+                    <g id="Group">
+                      <path id="Shape_heart" d="M.718,2.1A5.449,5.449,0,0,1,4,5.381a1.079,1.079,0,1,0,2.034-.72A7.521,7.521,0,0,0,1.44.062,1.079,1.079,0,1,0,.718,2.1Z" transform="translate(28.096 4.688)" fill="#c5d5e6"/>
+                      <path id="Shape_heart_2" data-name="Shape" d="M18.9,36.554a1.08,1.08,0,0,0,1.034,0c12.28-6.7,18.9-17.718,18.9-24.685A11.87,11.87,0,0,0,16.212,6.86a1.079,1.079,0,1,0,1.955.912,9.713,9.713,0,0,1,18.518,4.1c0,6.335-6.445,16.4-17.264,22.5C8.6,28.269,2.158,18.2,2.158,11.869a9.717,9.717,0,0,1,13.6-8.9A1.079,1.079,0,1,0,16.622.991,11.874,11.874,0,0,0,0,11.869C0,18.836,6.626,29.855,18.9,36.554Z" transform="translate(0.035 0.001)" fill="#c5d5e6"/>
+                    </g>
+                  </g>
+                </svg>
+            </div>
+            <p class="fons_text heart_text">Волонтерство</p>
+          </div>
+        </div>
+        <div class="bg2a"></div>
+          <center>
+            <div class="bg2b">
+              <div class="bank">
+                <div class="cartas__carta">
+                  <div class="cartas">
+                    <p class="cartas__text">Спосіб оплати </p>
+                    <div class="cartas_0 visa">
+                      <div class="cartas_0_photo">
+                        <img src="img/visa.svg" alt="">
+                        <img src="img/visa1.svg" alt="">
+                      </div>
+                      <p class="cartas_1">Карта Visa/MasterCard</p>
+                    </div>
+                    <div class="cartas_0 privat">
+                      <div>
+                        <p class="cartas_2">Приват24</p>
+                      </div>
+                      <div>
+                        <p class="cartas_22">Приват24</p>
+                      </div>
+                    </div>
+                    <div class="cartas_0 terminal">
+                      <img class="cartas_3" src="img/terminal.svg" alt="">
+                      <p class="cartas_33">Термінали України</p>
+                    </div>
+                    <div class="cartas_0 webmoney">
+                      <img class="cartas_4" src="img/webmoney.svg" alt="">
+                      <p class="cartas_44">WebMoney</p>
+                    </div>
+                    <div class="cartas_0 paypal">
+                      <img class="cartas_5" src="img/paypal.svg" alt="">
+                      <p class="cartas_55">PayPal</p>
+                    </div>
+                    <div class="cartas_0 perekaz">
+                      <div>
+                        <img class="cartas_6" src="img/perekaz.svg" alt="">
+                      </div>
+                      <div>
+                        <p class="cartas_66">Банковський переказ</p>
+                      </div>
+                    </div>
+                  </div>
+                <div class="carta">
+                  <div class="carta__center">
+                    <p class="carta__text">Введіть наступні данні</p>
+                      <div class="carta__Btns">
+                        <p class="carta__Btns__text">Номер карти</p>
+                        <input required id="nomer1" onkeyup="perevirka(this, 'nomer2')" size="4" maxlength="4" form="data" class="carta__Btn" name="number" type="text"> 
+                        <input required id="nomer2" onkeyup="perevirka(this, 'nomer3')" autofocus size="4" maxlength="4" form="data" class="carta__Btn" name="number" type="text"> 
+                        <input required id="nomer3" onkeyup="perevirka(this, 'nomer4')" autofocus size="4" maxlength="4" form="data" class="carta__Btn" name="number" type="text"> 
+                        <input required id="nomer4" onkeyup="perevirka(this, 'date')" autofocus size="4" maxlength="4" form="data" class="carta__Btn" name="number" type="text">
+                        <p class="carta__code_text1">Термін дії</p>
+                        <p class="carta__code_text2">CVC/CVV</p>
+                        <div class="carta__code">
+                        <input required id="date" onkeyup="perevirka(this, 'nomer_cod')" autofocus autocomplete="off" size="4" maxlength="4" form="data" class="carta__input" type="text">
+                        <input required id="nomer_cod" autofocus autocomplete="off" size="3" maxlength="3" form="data" class="carta__input" name="number" type="password">
+                      </div> 
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </center>
+      <center>
+        <button form="data" class="Btn_help">
+        Допомогти
+      </button>
+      </center>
+        </div> 
+          </div>
+        </div>
+        <div class="help_flex">
+          <div class="help_background">
+            <input class="help_close" onclick="close_help()" type="image" src="img/Close.svg">
+            <div class="help_container">
+              <center>
+                <p class="help_container_Bigtext">Види допомоги</p>
+              </center>
+              <div class="help_container_photos">
+                <div>
+                  <div class="fons_icon">
+                    <div class="fonDis">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40.384" height="40" viewBox="0 0 32.384 40">
+                          <path id="Shape_land" d="M32.336,12.753l-2.8,18.974a4.339,4.339,0,0,1-1.379,2.532c-.449.447-.748.744-.748,2.2v2.369a1.176,1.176,0,1,1-2.353,0V36.454a4.6,4.6,0,0,1,1.445-3.864,2.005,2.005,0,0,0,.715-1.256l2.788-18.915c.042-.289.12-1.271-.642-1.376a.828.828,0,0,0-.647.134,1.329,1.329,0,0,0-.442.889l-1.169,7.8a1.175,1.175,0,0,1-1.835.791.875.875,0,0,1-.513-.184,1.171,1.171,0,0,1-.539-1.054l.671-12.438a1.133,1.133,0,0,0-1.016-1.252,1.113,1.113,0,0,0-1.207,1.012L21.578,18a1.154,1.154,0,0,1-1.249,1.061c-.191-.012-.384-.024-.579-.026A1.179,1.179,0,0,1,18.6,17.875l-.271-14.4a1.1,1.1,0,1,0-2.2-.024l-.278,15.5a1.177,1.177,0,0,1-.673,1.042c-.146.071-.287.141-.421.216a1.162,1.162,0,0,1-1.12.019A1.184,1.184,0,0,1,13,19.3L11.79,6.76a1.11,1.11,0,0,0-.391-.767,1.158,1.158,0,0,0-.812-.256,1.108,1.108,0,0,0-1.007,1.2l1.184,16.7a1.176,1.176,0,0,1-2.094.814l-3.649-4.6a1.442,1.442,0,0,0-1.976-.645,1.368,1.368,0,0,0-.642.838,1.35,1.35,0,0,0,.141,1.042l8.3,14.322a1.357,1.357,0,0,0,.864.645,1.176,1.176,0,0,1,.9,1.144v1.624a1.176,1.176,0,1,1-2.353,0V38a3.689,3.689,0,0,1-1.445-1.407L.505,22.271a3.73,3.73,0,0,1,1.362-5.1,3.73,3.73,0,0,1,5.092,1.362L8.15,20.026l-.915-12.9a3.463,3.463,0,0,1,6.5-1.918l.033-1.772a3.454,3.454,0,0,1,6.908.021l.033,1.755a3.518,3.518,0,0,1,.831-1.021,3.472,3.472,0,0,1,5.692,2.96l-.125,2.3c.061-.054.127-.106.191-.155a3.173,3.173,0,0,1,2.4-.584c1.847.256,2.936,1.92,2.64,4.04Z" fill="#c5d5e6"/>
+                        </svg>              
+                    </div>
+                    <p class="fons_text_help">Зробити</p>
+                  </div>
+                  <p class="help_container_text">
+                    Натискайте цю кнопку,
+                    якщо Ви хочете зробити,
+                    наприклад: ремонт у 
+                    дитячому будинку,
+                    складну операцію,
+                    побудувати дитячий
+                    майданчик або побудувати житло
+                    для переселенців і тд.
+                  </p>
+                  <p class="help_container_text1">
+                    Ця кнопка, для організацій, які можуть взяти на себе відповідальність за увесь проект. 
+                  </p>
+                </div>
+                <div>
+                  <div class="fons_icon">
+                    <div class="fonDis">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40.977" viewBox="0 0 40 32.977">
+                        <path id="Shape_money" d="M3.647,32.977A3.637,3.637,0,0,1,0,29.358V3.619H.033A3.638,3.638,0,0,1,3.68,0H40V29.083H35.393v3.894Z" fill="#c5d5e6"/>
+                      </svg>
+                  </div>
+                  <p class="fons_text_help">Фінансова допомога</p>
+                </div>
+                  <p class="help_container_text">
+                    Перераховуйте гроші тим, хто дійсно потребує цього. 
+                  </p>
+                </div>
+                <div>
+                  <div class="fons_icon">
+                    <div class="fonDis">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="39.805" height="40.06" viewBox="0 0 39.805 55.06">
+                          <g id="clothes" transform="translate(-0.119)">
+                            <g id="Group">
+                              <path id="Shape_clothes" d="M9.125,30.595a.971.971,0,0,1-.97-.97V14.192l-2.09,1.045a.971.971,0,0,1-1.228-.309l-4.66-6.6A.971.971,0,0,1,.349,7.021L8.5.23A.965.965,0,0,1,9.125,0H30.678A.969.969,0,0,1,31.3.229l8.151,6.792a.97.97,0,0,1,.171,1.306l-4.659,6.6a.971.971,0,0,1-1.228.309l-2.09-1.045v2.617a.971.971,0,1,1-1.941,0V1.941H26.04a6.213,6.213,0,0,1-12.274,0H10.1V28.653h5.938a.971.971,0,1,1,0,1.941Z" transform="translate(0.12)" fill="#c5d5e6"/>
+                              <path id="Shape_clothes_2" data-name="Shape" d="M13.015,36.152a.971.971,0,0,1-.969-.917L10.731,11.579,9.416,35.235a.97.97,0,0,1-.969.917H.971A.971.971,0,0,1,0,35.181V.971A.971.971,0,0,1,.971,0h19.52a.971.971,0,0,1,.971.971v34.21a.971.971,0,0,1-.971.971Z" transform="translate(18.304 18.908)" fill="#c5d5e6"/>
+                            </g>
+                          </g>
+                        </svg>              
+                    </div>
+                     <p class="fons_text_help">Матеріальна допомога</p>
+                  </div>
+                  <p class="help_container_text">
+                    Зберіть ліки, речі, їжу, іграшки та інше, для тих, кому це необхідно.
+                  </p>
+                </div>
+                <div>
+                  <div class="fons_icon">
+                    <div class="fonDis">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40.843" height="40.685" viewBox="0 0 38.843 36.685">
+                          <g id="donation" transform="translate(-0.035 -0.001)">
+                            <g id="Group">
+                              <path id="Shape_heart" d="M.718,2.1A5.449,5.449,0,0,1,4,5.381a1.079,1.079,0,1,0,2.034-.72A7.521,7.521,0,0,0,1.44.062,1.079,1.079,0,1,0,.718,2.1Z" transform="translate(28.096 4.688)" fill="#c5d5e6"/>
+                              <path id="Shape_heart_2" data-name="Shape" d="M18.9,36.554a1.08,1.08,0,0,0,1.034,0c12.28-6.7,18.9-17.718,18.9-24.685A11.87,11.87,0,0,0,16.212,6.86a1.079,1.079,0,1,0,1.955.912,9.713,9.713,0,0,1,18.518,4.1c0,6.335-6.445,16.4-17.264,22.5C8.6,28.269,2.158,18.2,2.158,11.869a9.717,9.717,0,0,1,13.6-8.9A1.079,1.079,0,1,0,16.622.991,11.874,11.874,0,0,0,0,11.869C0,18.836,6.626,29.855,18.9,36.554Z" transform="translate(0.035 0.001)" fill="#c5d5e6"/>
+                            </g>
+                          </g>
+                        </svg>
+                    </div>
+                    <p class="fons_text_help">Волонтерство</p>
+                  </div>
+                  <p class="help_container_text">
+                    Допоможіть ділом або професійними навичками. Підтримайте проекти своєю роботою. 
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      <div class="container">
+        <div class="scontainer">
+          <div class="header__main">
+            <div class="about__project">
+              <h1 class="heading">
+                Добре Серце
+                </h1>
+              <a href="../project/project.html" class="strongTxt strongTxt-item">
+                детальніше про проект
+              </a>
+            </div>
+            <p class="beforeTitle">Вже зараз Ви можете допомогти тим, хто дійсно потребує допомоги</p>
+            <div class="help">
+              <a href="#" class="strongTxt strongTxt-item" onclick="open_help()">
+                <p>Як Ви можете допомогти?</p>
+              </a>
+              <button onclick="open_forma()" class="helpNow">Допомогти вже зараз</button>
+            </div>
+            <p class="beforeTitle">
+              Якщо Вам необхідна допомога, додайте проект
+            </p>
+            <a href="../project/project.html">
+            <p class="strongTxt strongTxt-plus">Додати проект</p>
+            </a>
+          </div>
+          <div class="header_main_on">
+              <div class="about__project">
+                <h1 class="heading">
+                  Добре Серце
+                  </h1>
+              </div>
+              <div class="url">
+              <a href="../project/project.html" class="strongTxt strongTxt-item">
+                Детальніше про проект
+              </a>
+              <a href="#" class="strongTxt strongTxt-item" onclick="open_help()">
+                <p>Як Ви можете допомогти?</p>
+              </a>
+              </div>
+              <center>
+              <p class="beforeTitle">Вже зараз Ви можете допомогти тим, хто дійсно потребує допомоги</p>
+              </center>
+              <div class="help">
+              </div>
+              <button onclick="open_forma()" class="helpNow">Допомогти вже зараз</button>
+              <center>
+                <p class="beforeTitle">
+                Якщо Вам необхідна допомога, додайте проект
+              </p>
+              <a href="../project/project.html">
+                <p class="strongTxt">Додати проект</p>
+              </a>
+            </center>
+            
+          </div>  
+        </div>
+        <div class="share">
+          <p>Розповісти всім:</p>
+          <a><img src="img/twiter.svg" alt=""></a>
+          <a><img src="img/facebook.svg" alt=""></a>
+          <a><img src="img/vk.svg" alt=""></a>
+        </div>  
+      </div>
+      <img class="bigheart" src="img/bigheart.svg" alt="">
+      <div class="chat">
+        <a><img src="img/chat.svg"></a>
+      </div>
+    </div>
+  </header>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/jquery.maskedinput.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

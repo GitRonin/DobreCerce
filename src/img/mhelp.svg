@@ -1,0 +1,13 @@
+<svg id="Материально" xmlns="http://www.w3.org/2000/svg" width="206" height="80" viewBox="0 0 206 80">
+  <text id="Матеріальна_допомога" data-name="Матеріальна допомога" transform="translate(101 41)" fill="#363b5d" font-size="18" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Матеріальна</tspan><tspan x="0" y="24">допомога</tspan></text>
+  <g id="Rectangle_12_Copy_3" data-name="Rectangle 12 Copy 3" fill="none" stroke="#c5d5e6" stroke-miterlimit="10" stroke-width="2">
+    <rect width="80" height="80" rx="15" stroke="none"/>
+    <rect x="1" y="1" width="78" height="78" rx="14" fill="none"/>
+  </g>
+  <g id="clothes" transform="translate(18.333 14)">
+    <g id="Group">
+      <path id="Shape" d="M9.125,30.595a.971.971,0,0,1-.97-.97V14.192l-2.09,1.045a.971.971,0,0,1-1.228-.309l-4.66-6.6A.971.971,0,0,1,.349,7.021L8.5.23A.965.965,0,0,1,9.125,0H30.678A.969.969,0,0,1,31.3.229l8.151,6.792a.97.97,0,0,1,.171,1.306l-4.659,6.6a.971.971,0,0,1-1.228.309l-2.09-1.045v2.617a.971.971,0,1,1-1.941,0V1.941H26.04a6.213,6.213,0,0,1-12.274,0H10.1V28.653h5.938a.971.971,0,1,1,0,1.941Z" transform="translate(0.12)" fill="#c5d5e6"/>
+      <path id="Shape-2" data-name="Shape" d="M13.015,36.152a.971.971,0,0,1-.969-.917L10.731,11.579,9.416,35.235a.97.97,0,0,1-.969.917H.971A.971.971,0,0,1,0,35.181V.971A.971.971,0,0,1,.971,0h19.52a.971.971,0,0,1,.971.971v34.21a.971.971,0,0,1-.971.971Z" transform="translate(18.304 18.908)" fill="#c5d5e6"/>
+    </g>
+  </g>
+</svg>

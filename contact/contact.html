@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Контакти</title>
+  <link rel="stylesheet" href="sass/style.css">
+  <link rel="icon" href="img/logo.png" type="image/x-icon">
+</head>
+<body>
+  <div class="close"></div>
+  <header class="header">
+    <div class="navbar">
+      <div class="logo"><a href="../src/index.html"><img src="img/logo.svg"></a></div>
+      <div class="menulanguage">
+        <a class="ua" href="#">УКР</a>
+        <a class="menulanguage__item rus" href="#">РУС</a>
+        <a class="menulanguage__item en" href="#">EN</a>
+      </div>
+      <nav>
+        <ul class="navMenu">
+          <li class="navMenu__item"><a class="navMenu__a" href="../project/project.html">Проекти</a></li>
+          <li class="navMenu__item"><a class="navMenu__a" href="../archive/archive.html">Архів</a></li>
+          <li class="navMenu__item"><a class="navMenu__b" href="../contact/contact.html">Контакти</a></li>
+          <li class="navMenu__item"><a class="navMenu__a navMenu__a-gradient" href="../help/help.html">Термінова допомога</a></li>
+        </ul>
+      </nav>
+      <button type="button" id="searchBtn" class="searchSvg">
+        <img src="img/search.svg">  
+      </button>
+      <a href="../error/error.html">
+        <button class="navbar__btn">Вхід / Зареєструватися</button>
+      </a>
+    </div>
+    <div id="search" class="search">
+      <p class="searchText">Пошук:</p>
+      <div class="afterInput">
+      </div>
+    </div>
+    <div class="bigSearch">
+        <div class="bigSearch_container">
+          <p class="bigSearch_container_topic">Проекти</p>
+          <div class="bigSearch_container_allText">
+            <div class="bigSearch_container_text_1">
+              <p class="bigSearch_container_text">Діти</p>
+              <p class="bigSearch_container_text_small">Для операції на сердце маленькому хлопчику, необхідно зібрати гроші на ліки</p>
+              <img class="bigSearch_container_smallLine" src="img/smallLine.svg" alt="123 ">
+              <p class="bigSearch_container_text_small">Збираємо гроші на лікування п’ятирічного Василя, який став жертвою ДТП </p>
+              <img class="bigSearch_container_bigLine" src="img/bigLine.svg" alt="">
+            </div>
+            <div class="bigSearch_container_text_2">
+              <p class="bigSearch_container_text">Війна</p>
+              <p class="bigSearch_container_text_small">Необхідно зібрати ліки для поранених бійців із зони АТО </p>
+            </div>
+          </div>
+          <p class="bigSearch_container_topic">Архів</p>
+          <div class="bigSearch_container_allText">
+            <div class="bigSearch_container_text_1">
+              <p class="bigSearch_container_text">Діти</p>
+              <p class="bigSearch_container_text_small">Необхідно купити ліки для дитячого будинку в місті Київ</p>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="container">
+      <div class="header__main">
+        <div class="tel">
+          <p>+38 (077) 777 77 77 </p>
+        </div>
+        <div class="email">
+          <p>help@kindheart.ua</p>
+        </div>
+        <div class="text">
+        <p>Заповніть своє ім’я і контактні дані, і Вам нададуть консультацію по телефону</p> 
+        </div>
+          <center>
+            <div class="btn">
+              <form action="">
+                <input class="help name" id="Btn_name" required type="text" autocomplete="off" minlength="3" maxlength="12" pattern="^[Яа-яЁёІіЇїЄє-A-Za-zА-Яа-яЁё]+$" placeholder="Ім’я">
+                <input class="help name phone" id="Btn_tel" required autocomplete="off" minlength="10" maxlength="12" placeholder="+38 (067) 777 77 77">
+                <input class="help press" onclick="Btn()" value="Відправити" type="submit">
+                </form>
+            </div>
+          </center>
+          </div> 
+        </div>
+        <div class="share">
+          <img src="img/twiter.svg" alt="">
+          <img src="img/facebook.svg" alt="">
+          <img src="img/vk.svg" alt="">
+        </div>
+      <div class="chat">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="js/jquery.maskedinput.js"></script>
+        <script src="js/main.js"></script>
+      </div>  
+  </header>
+  <script src="js/main.js"></script>
+</body>
+</html>

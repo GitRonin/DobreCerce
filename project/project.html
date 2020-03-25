@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Проекти</title>
+  <link rel="stylesheet" href="sass/style.css">
+  <link rel="icon" href="img/logo.png" type="image/x-icon">
+</head>
+<body>
+  <div class="close"></div>
+  <header class="header">
+    <div class="navbar">
+      <div class="logo">
+        <a href="../src/index.html"><img src="img/logo.svg"></a>
+      </div>
+      <div class="menulanguage">
+        <a class="ua" href="#">УКР</a>
+        <a class="menulanguage__item rus" href="#">РУС</a>
+        <a class="menulanguage__item en" href="#">EN</a>
+      </div>
+      <nav>
+        <ul class="navMenu">
+          <li class="navMenu__item"><a class="navMenu__b" href="../project/project.html">Проекти</a></li>
+          <li class="navMenu__item"><a class="navMenu__a" href="../archive/archive.html">Архів</a></li>
+          <li class="navMenu__item"><a class="navMenu__a" href="../contact/contact.html">Контакти</a></li>
+          <li class="navMenu__item"><a class="navMenu__a navMenu__a-gradient" href="../help/help.html">Термінова допомога</a></li>
+        </ul>
+      </nav>
+      <button type="button" id="searchBtn" class="searchSvg">
+        <img src="img/search.svg">  
+      </button>
+      <a href="../error/error.html">
+        <button class="navbar__btn">Вхід / Зареєструватися</button>
+      </a>
+    </div>
+    <div id="search" class="search">
+      <p class="searchText">Пошук:</p>
+      <div class="afterInput"></div>
+    </div>
+    <div class="bigSearch">
+      <div class="bigSearch_container">
+        <p class="bigSearch_container_topic">Проекти</p>
+        <div class="bigSearch_container_allText">
+          <div class="bigSearch_container_text_1">
+            <p class="bigSearch_container_text">Діти</p>
+            <p class="bigSearch_container_text_small">Для операції на сердце маленькому хлопчику, необхідно зібрати гроші на ліки</p>
+            <img class="bigSearch_container_smallLine" src="img/smallLine.svg" alt="123 ">
+            <p class="bigSearch_container_text_small">Збираємо гроші на лікування п’ятирічного Василя, який став жертвою ДТП </p>
+            <img class="bigSearch_container_bigLine" src="img/bigLine.svg" alt="">
+          </div>
+          <div class="bigSearch_container_text_2">
+            <p class="bigSearch_container_text">Війна</p>
+            <p class="bigSearch_container_text_small">Необхідно зібрати ліки для поранених бійців із зони АТО </p>
+          </div>
+        </div>
+        <p class="bigSearch_container_topic">Архів</p>
+        <div class="bigSearch_container_allText">
+          <div class="bigSearch_container_text_1">
+            <p class="bigSearch_container_text">Діти</p>
+            <p class="bigSearch_container_text_small">Необхідно купити ліки для дитячого будинку в місті Київ</p>
+          </div>
+        </div>
+      </div>
+  </div>
+  <div class="forma_flex">
+    <div class="background2"></div>
+    <div class="background">
+      <div class="wcontainer">
+        <form id = "data"></form>
+        <label id = "updata"></label>
+        <input class="close_forma" onclick="close_forma()" type="image" src="img/Close.svg">
+          <center>
+            <p class="text">Заповніть форму</p>
+          </center>
+          <ul class="navMenu1">
+            <li><a class="f" href="#" onclick="pls2()">Фіз. особа</a></li>
+            <li><a class="u" href="#" onclick="pls()">Юр. особа</a></li>
+          </ul>
+          <p class="logotip">+ Логотип</p>
+          <div class="textAll">
+            <div class="textLeft">
+              <div class="nameFamily">
+                <div class="name">
+                  <p>Ім'я</p>
+                  <input required autofocus form="data" for="updata" minlength="3" maxlength="10"  pattern="^[A-Za-zА-Яа-яЁёІіЇїЄє]+$" type="text" name="dick" class="nameBtn">
+                </div>
+                <div class="name">
+                    <p>Фамілія</p>
+                  <input required autofocus form="data" for="updata" minlength="3" maxlength="12"  pattern="^[A-Za-zА-Яа-яЁёІіЇїЄє]+$" type="text"  name="dick" class="nameBtn">
+                  </div>
+                </div>
+              <div class="name company">
+                <p>Назва компаніі, організації</p>
+                <input required autofocus form="data" for="updata" minlength="3" maxlength="12" pattern="^[A-Za-zА-Яа-яЁёІіЇїЄє]+$+\s" type="text" class="familyBtn">
+              </div>
+              <div class="name company">
+                <p>Email-адрес</p>
+                <input required autofocus form="data" pattern="^[A-Za-z]+[ 0-9]+$" type="text" class="familyBtn">
+              </div>
+              <div class="name company">
+                <p>Номер телефону</p>
+                <input required autofocus form="data" minlength="10" maxlength="12" pattern="^[0-9]+$" type="text" class="familyBtn">
+              </div>
+              <div class="uface urface">
+                <div class="name company">
+                  <p>Юридична адреса</p>
+                  <input required autofocus form="data" minlength="5" maxlength="20" type="text" class="familyBtn"">
+                </div>
+                <div class="nameFamily city">
+                  <div class="name">
+                    <p>Найменування банку</p>
+                    <input required autofocus form="data" minlength="5" maxlength="20" type="text" class="nameBtn">
+                  </div>
+                  <div class="name">
+                    <p>МФО банку</p>
+                    <input required autofocus form="data" minlength="5" maxlength="20" type="text" class="nameBtn">
+                  </div>
+                </div>
+                <div class="name company">
+                  <p>Розрахунковий рахунок</p>
+                  <input required autofocus form="data" minlength="5" maxlength="20" pattern="^[0-9]+$" type="text" class="familyBtn"">
+                </div>
+              </div>
+            </div>
+            <div class="textRight">
+              <div class="country">
+                <p>Країна</p>
+                <input required autofocus form="data" minlength="3" maxlength="15" pattern="^[A-Za-zА-Яа-яЁёІіЇїЄє]+$" type="text" class="familyBtn">
+              </div>
+                <div class="nameFamily city">
+                  <div class="name">
+                    <p>Місто</p>
+                    <input required autofocus form="data" minlength="3" maxlength="15" pattern="^[A-Za-zА-Яа-яЁёІіЇїЄє]+$" type="text" class="nameBtn">
+                  </div>
+                  <div class="name">
+                    <p>Штат, район</p>
+                    <input required autofocus form="data" minlength="3" maxlength="15" type="text" class="nameBtn">
+                  </div>
+                </div>
+                <div class="name">
+                  <p>Адреса</p>
+                  <input required autofocus form="data" minlength="5" maxlength="20" type="text" class="familyBtn">
+                </div>
+                <div class="name">
+                  <p>Поштовий індекс</p>
+                  <input required autofocus form="data" minlength="5" maxlength="20" pattern="^[0-9]+$+\s" type="text" class="nameBtn">
+                </div>
+                <div class="uface urface2">
+                  <div class="nameFamily city">
+                    <div class="name">
+                      <p>ЗКПО</p>
+                      <input required autofocus form="data" minlength="3" maxlength="20" type="text" class="nameBtn">
+                    </div>
+                    <div class="name">
+                      <p>Тип оподаткування</p>
+                      <input required autofocus form="data" minlength="3" maxlength="20" type="text" class="nameBtn">
+                    </div>
+                  </div>
+                  <div class="nameFamily city">
+                    <div class="name">
+                      <p>ІНН</p>
+                      <input required autofocus form="data" minlength="3" maxlength="20" type="text" class="nameBtn">
+                    </div>
+                    <div class="name">
+                      <p>Система оподаткування</p>
+                      <input required autofocus form="data" minlength="3" maxlength="20" type="text" class="nameBtn">
+                    </div>
+                  </div>
+                  <div class="nameFamily city">
+                    <div class="name">
+                      <p>Телефон бугалтерії</p>
+                      <input required autofocus form="data" minlength="10" maxlength="12" pattern="^[0-9]+$" type="text" class="nameBtn">
+                    </div>
+                    <div class="name">
+                      <p>Факс</p>
+                      <input required autofocus form="data" minlength="3" maxlength="20" type="text" class="nameBtn">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      <center>
+        <p class="text aid">Види допомоги</p>
+        <p class="textDop">Ви можете змінити вид допомоги</p>
+      </center>
+      <div class="fons">
+        <div class="land">
+          <img class="fonDis" src="img/land.svg">
+          <p class="textFons">Зробити</p>
+        </div>
+        <div class="money">
+          <img class="fonActive" src="img/money1.svg">
+          <p class="textFons">Фінансова допомога</p>
+        </div>
+        <div class="clothes wh">
+          <img class="fonDis" src="img/clothes.svg">
+          <p class="textFons">Матеріальна допомога</p>
+        </div>
+        <div class="heart wh">
+          <img class="fonDis" src="img/heart.svg">
+          <p class="textFons">Волонтерство</p>
+        </div>
+      </div>
+      <div class="bg2a"></div>
+        <center>
+          <div class="bg2b">
+            <div class="bank">
+              <div class="cartas__carta">
+                <div class="cartas">
+                  <p class="cartas__text">Спосіб оплати </p>
+                  <div class="visa"><img class="carti" src="img/visa.svg"></div>
+                  <div class="privat"><img class="carti" src="img/privat1.svg"></div>
+                  <div class="terminal"><img class="carti" src="img/terminal.svg"></div>
+                  <div class="webmoney"><img class="carti" src="img/webmoney.svg"></div>
+                  <div class="paypal"><img class="carti" src="img/paypal.svg"></div>
+                  <div class="perekaz"><img class="carti" src="img/perekaz.svg"></div>
+                </div>
+              <div class="carta">
+                <div class="carta__center">
+                  <p class="carta__text">Введіть наступні данні</p>
+                    <div class="carta__Btns">
+                      <p class="carta__Btns__text">Номер карти</p>
+                      <input required id="nomer1" onkeyup="perevirka(this, 'nomer2')" size="4" maxlength="4" form="data" class="carta__Btn" name="number" type="text"> 
+                      <input required id="nomer2" onkeyup="perevirka(this, 'nomer3')" autofocus size="4" maxlength="4" form="data" class="carta__Btn" name="number" type="text"> 
+                      <input required id="nomer3" onkeyup="perevirka(this, 'nomer4')" autofocus size="4" maxlength="4" form="data" class="carta__Btn" name="number" type="text"> 
+                      <input required id="nomer4" onkeyup="perevirka(this, 'date')" autofocus size="4" maxlength="4" form="data" class="carta__Btn" name="number" type="text">
+                      <p class="carta__code_text1">Термін дії</p>
+                      <p class="carta__code_text2">CVC/CVV</p>
+                      <div class="carta__code">
+                      <input required id="date" onkeyup="perevirka(this, 'nomer_cod')" autofocus autocomplete="off" size="4" maxlength="4" form="data" class="carta__input" type="text">
+                      <input required id="nomer_cod" autofocus autocomplete="off" size="3" maxlength="3" form="data" class="carta__input" name="number" type="password">
+                    </div> 
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </center>
+    <center>
+      <button form="data" class="Btn_help">
+      Допомогти
+    </button>
+    </center>
+      </div> 
+        </div>
+      </div>
+      <div class="help_flex">
+        <input class="help_close" onclick="close_help()" type="image" src="img/Close.svg">
+        <div class="help_background">
+          <div class="help_container">
+            <center>
+              <p class="help_container_Bigtext">Види допомоги</p>
+            </center>
+            <div class="help_container_photos">
+              <div>
+                <a><img src="img/do.svg"></a>
+                <p class="help_container_text">
+                  Натискайте цю кнопку,
+                  якщо Ви хочете зробити,
+                  наприклад: ремонт у 
+                  дитячому будинку,
+                  складну операцію,
+                  побудувати дитячий
+                  майданчик або побудувати житло
+                  для переселенців і тд.
+                </p>
+                <p class="help_container_text1">
+                  Ця кнопка, для організацій, які можуть взяти на себе відповідальність за увесь проект. 
+                </p>
+              </div>
+              <div>
+                <a><img src="img/fhelp.svg"></a>
+                <p class="help_container_text">
+                  Перераховуйте гроші тим, хто дійсно потребує цього. 
+                </p>
+              </div>
+              <div>
+                <a><img src="img/mhelp.svg"></a>
+                <p class="help_container_text">
+                  Зберіть ліки, речі, їжу, іграшки та інше, для тих, кому це необхідно.
+                </p>
+              </div>
+              <div>
+                <a><img src="img/volon.svg"></a>
+                <p class="help_container_text">
+                  Допоможіть ділом або професійними навичками. Підтримайте проекти своєю роботою. 
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <nav class="container">
+      <nav>
+        <div class="tabs">
+          <p class="tab">Війна</p>
+          <p class="tab">Екологія</p>
+          <div>
+            <p class="tabd tabd_l">Діти</p>
+            <p class="number">24</p>
+          </div>
+          <p class="tab">Освіта</p>
+        </div>
+      </nav>
+        <div class="textH">
+          <a href="#" onclick="open_help()"><p class="textHelp textHelp-item">Види допомоги</p></a> 
+        </div>
+          <nav class="allText">
+            <div class="text1">
+              <img src="img/photo1.svg" class="text1_photo">
+              <div class="text1_all">
+                <p class="text1_data">07.05.2017</p>
+                <p class="text1_theme">Необхідна допомога дитячому будинку</p>
+                <p class="text1_general">Перебуваючи у сиротинцях ці діти мають різного роду матеріальні та нематеріальні потреби, якими зазвичай ніхто не займається. Ті, хто має займатися утриманням дитячих будинків, опікою над дітьми часто забувають про свій обов’язок або ж отримують недостатнє фінансування від держави. Тому вся надія цих діточок покладається на небайдужих людей, волонтерів, благодійні фонди. </p> 
+                <p class="text1_end">Зібрано 10 000 з 25 000 UAH</p>
+              </div>
+              <div class="icons">
+                <a href="#" onclick="open_forma()"><img class="" src="img/help1.svg"></a>
+                <a href="#" onclick="open_forma()"><img class="" src="img/help2.svg"></a>
+                <a href="#" onclick="open_forma()"><img class="" src="img/help3.svg"></a>
+                <a href="#" onclick="open_forma()"><img class="" src="img/help4.svg"></a>
+              </div>
+            </div>
+          </nav>
+          <img class="line" src="img/line.svg">
+          <nav class="allText">
+            <div class="text1">
+              <img src="img/photo2.svg" class="text2_photo">
+              <div class="text2_btn">
+                <a class="" href="../help/help.html"><p class="btnHelp navMenu__a-gradient">Терміново</p></a>
+              </div>
+              <div class="text1_all">
+                <p class="text1_data">04.05.2017</p>
+                <p class="text1_theme">Необхідна допомога дитячому будинку</p>
+                <p class="text1_general"></p> 
+              </div>
+            </div>
+          </nav>
+          <img class="line" src="img/line.svg">
+          <nav class="allText">
+            <div class="text1">
+              <img src="img/photo3.svg" class="text2_photo">
+              <div class="text1_all">
+                <p class="text1_data">03.05.2017</p>
+                <p class="text1_theme">Освітній загальний курс з основ WEB технологій для школярів</p>
+                <p class="text1_general"></p> 
+              </div>
+            </div>
+          </nav>
+          <img class="line" src="img/line.svg">
+          <nav class="allText">
+            <div class="text1">
+              <img src="img/photo4.svg" class="text2_photo">
+              <div class="text1_all">
+                <p class="text1_data">03.05.2017</p>
+                <p class="text1_theme">Необхідно купити ліки у дитячий будинок</p>
+                <p class="text1_general"></p> 
+              </div>
+            </div>
+          </nav>
+          <img class="line" src="img/line.svg">
+          <nav class="allText">
+            <div class="text1">
+            <img src="img/photo5.svg">
+              <div class="text1_all">
+                <p class="text1_data">03.05.2017</p>
+              </div>
+            </div>
+          </nav>
+    </nav>
+    <div class="chat">
+      <img src="img/chat.svg">
+    </div> 
+  </header>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/jquery.maskedinput.js"></script>
+  <script src="js/main.js"></script>
+</body> 
+</html>
